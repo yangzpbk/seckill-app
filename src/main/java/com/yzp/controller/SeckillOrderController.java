@@ -2,7 +2,7 @@ package com.yzp.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import com.yzp.common.comstr.CommonObject;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-10-24
  */
 @RestController
-@RequestMapping("/yzp/seckill-order")
+@RequestMapping(CommonObject.PreFix + "/seckill-order")
 public class SeckillOrderController {
 
 }

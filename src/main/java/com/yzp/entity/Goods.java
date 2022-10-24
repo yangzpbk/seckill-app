@@ -3,21 +3,20 @@ package com.yzp.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import java.io.Serializable;
+import java.math.BigDecimal;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
-
 /**
- * <p>
- *
- * </p>
- *
- * @author yangzp
- * @since 2022-10-24
- */
+* <p>
+* 
+* </p>
+*
+* @author yangzp
+* @since 2022-10-24
+*/
 @Data
 @TableName("t_goods")
 @ApiModel(value = "Goods对象", description = "")
@@ -26,7 +25,7 @@ public class Goods implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("商品id")
-    @TableId(value = "id", type = IdType.AUTO)
+       @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @ApiModelProperty("商品名称")
