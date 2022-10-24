@@ -1,21 +1,20 @@
 package com.yzp.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import java.io.Serializable;
+import java.time.LocalDate;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-import java.io.Serializable;
-import java.util.Date;
-
 /**
- * <p>
- *
- * </p>
- *
- * @author yangzp
- * @since 2022-10-24
- */
+* <p>
+* 
+* </p>
+*
+* @author yangzp
+* @since 2022-10-24
+*/
 @Data
 @TableName("t_user")
 @ApiModel(value = "User对象", description = "")
@@ -37,10 +36,10 @@ public class User implements Serializable {
     private String head;
 
     @ApiModelProperty("注册时间")
-    private Date registerDate;
+    private LocalDate registerDate;
 
     @ApiModelProperty("最后一次登录时间")
-    private Date lastLoginDate;
+    private LocalDate lastLoginDate;
 
     @ApiModelProperty("登录次数")
     private Integer loginCount;
